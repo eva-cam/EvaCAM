@@ -1,0 +1,102 @@
+//CELL FILE.. 2FEFET-TCASII 2018
+
+-MemCellType: FEFETRAM
+
+-ProcessNode: 45
+-CellArea (F^2): 300
+-CellAspectRatio: 1.76
+-AccessType: none
+-AccessCMOSWidth (F): 1.0
+-VoltageDropAccessDevice (V): 0.15
+
+//-SRAMCellNMOSWidth (F): 
+//-SRAMCellPMOSWidth (F): 
+
+-ResistanceOn (ohm): 10000
+-ResistanceOff (ohm): 1.6E+09
+//-ResistanceOff (ohm): 1.6620499E+09
+
+//-CapacitanceOn (F): 0.0000001065
+//-CapacitanceOff (F): 
+
+-ReadMode: voltage
+-ReadVoltage (V): 1.0
+-ReadCurrent (uA): 5.62
+-ReadPower (uW): 5.62
+-MinSenseVoltage (mV): 70
+
+-ResetMode: voltage
+-ResetVoltage (V): 4
+-ResetCurrent (uA): 0.0000005
+-ResetPulse (ns): 10
+-ResetEnergy (pJ): 0.00002
+-SetMode: voltage
+-SetVoltage (V): 4
+-SetCurrent (uA): 0.000005
+-SetPulse (ns): 10
+-SetEnergy (pJ): 0.00002
+
+
+//////////Approximate Match/////////////////////////////////////
+-AdditionalCapOnML (fF): 33	
+////////////////////////////////////////////////////////////////
+
+-MLC: false
+-MatchCMOSWidth (F): 3
+-NumRowPort: 2
+
+-RowPort:PortType: 0:Searchline
+-RowPort:CmosRegion: 0:gate
+-RowPort:numCmos: 0:1
+-RowPort:widthCmos (F): 0:1.0
+-RowPort:isNMOS: 0:true
+-RowPort:volSetLRS (V): 0:4.0
+-RowPort:volReset (V): 0:4.0
+-RowPort:volSetMRS (V): 0:4.0
+-RowPort:volSearch0 (V): 0:1.0
+-RowPort:volSearch1 (V): 0:1.0
+-RowPort:widthWire: 0:1.0
+
+-RowPort:PortType: 1:Searchline
+-RowPort:CmosRegion: 1:gate
+-RowPort:numCmos: 1:1
+-RowPort:widthCmos (F): 1:1.0
+-RowPort:isNMOS: 1:true
+-RowPort:volSetLRS (V): 1:4.0
+-RowPort:volReset (V): 1:4.0
+-RowPort:volSetMRS (V): 1:4.0
+-RowPort:volSearch0 (V): 1:1.0
+-RowPort:volSearch1 (V): 1:1.0
+-RowPort:widthWire: 1:1.0
+
+
+
+-NumColPort: 1
+
+-ColPort:PortType: 0:Matchline
+-ColPort:CmosRegion: 0:drain
+-ColPort:numCmos: 0:1
+-ColPort:widthCmos (F): 0:1.0
+-ColPort:isNMOS: 0:true
+-ColPort:volSetLRS (V): 0:1.0
+-ColPort:volReset (V): 0:1.0
+-ColPort:volSetMRS (V): 0:1.0
+-ColPort:volSearch0 (V): 0:0.0
+-ColPort:volSearch1 (V): 0:1.0
+-ColPort:widthWire: 0:1.0
+
+
+
+//-ResistanceOnAtSetVoltage (ohm):
+//-ResistanceOffAtSetVoltage (ohm):
+//-ResistanceOnAtResetVoltage (ohm):
+//-ResistanceOffAtResetVoltage (ohm):
+//-ResistanceOnAtReadVoltage (ohm):
+//-ResistanceOffAtReadVoltage (ohm):
+//-GateOxThicknessFactor: 
+//-SOIDeviceWidth (F): 
+//-ResistanceOnAtHalfReadVoltage (ohm):
+//-ResistanceOffAtHalfReadVoltage (ohm):
+//-ResistanceOnAtHalfResetVoltage (ohm):
+//-WordlineBoostRatio: 
+
