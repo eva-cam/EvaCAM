@@ -27,6 +27,7 @@
 * To run Eva-CAM, two configuration files (xxx.cfg & xxx.cell) need to be provided. For more details about input configurations, see below. 
 * After the users specify the configuration files, use the command ./Eva-CAM xxx.cfg to run
   * $ ./Eva-CAM xxx.cfg 
+  * e.g. try ./Eva-CAM 2FeFET_TCAM.cfg.
 
 ## Input Configuration
 ### Supported NVM devices
