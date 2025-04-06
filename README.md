@@ -1,7 +1,7 @@
 
 
 
-# Eva-CAM_v1
+# Eva-CAM
 
 ## Sections 
 * Overview
@@ -14,7 +14,7 @@
 
 ## Overview
 
-![Eva-CAMorganization_new](https://user-images.githubusercontent.com/61231770/161645499-15faefd6-22d5-45d6-beca-f3e5f75f44b8.png)
+<img width="1717" alt="EvaCAM_overview" src="https://github.com/user-attachments/assets/3a13673b-db1d-4700-99df-3218f0ed96df" />
 
 
 * Eva-CAM is a circuit/architecture-level modeling and evaluation tool for content addressable memories (CAMs) that can project the area, timing, dynamic energy, and leakage power of NVM-based CAMs. The NVM technologies include FeFET, RRAM, STT-MRAM, PCM. Eva-CAM supports Ternary CAM (TCAM), Analog CAM (ACAM), and Multi-bit CAM (MCAM) designs implemented in non-volatile memories, for both exact and approximate match types. It also allows for the exploration of CAM array structures and sensing circuits. Eva-CAM has been validated with HSPICE simulation results and chip measurements. 
@@ -30,14 +30,38 @@
   * e.g. try ./Eva-CAM 2FeFET_TCAM.cfg.
 
 ## Input Configuration
-### Supported NVM devices
-* Two-terminal: RRAM, PCM, STT-MRAM
-* Three-terminal: FeFET
 
-
-## Content Addressable Memory Types
+### CAM cell characteristics
+#### NVM device
+* Device type: RRAM, PCM, STT-MRAM, FeFET
+* On/Off resistance
+* NVM read/write current or voltage
+#### CAM cell specifications
+* CAM types: TCAM, MCAM, ACAM
+* Cell area (feature size), aspect ratio, technology node
+* Wire configurations (e.g., BLs, WLs, SLs, MLs, etc.)
+  * Access transistor size
+  * Access transistor connect regions: gate, drain, diode, none(e.g., for 2FeFET design, no access transistor needed)
+  * Wire width
+  * Specific for MLs: isNVMdicharge (if NVM devices participate in the ML discharge process)
+### Array specification
+* Technology node and flavor (e.g., HP, LP)
+* Process temperature
+* Capacity
+* Wordwidth
+* SA types
+* Mat/bank/mux specifications
+* Optional peripherals, e.g., write drivers, output accumulator, priority encoder, output buffer, etc.
+### Optimization 
+* Overall optimization goal, e.g., latency, energy, area, EDP
+* Wire interconnect optimization goal 
 
 ## Search Functions
+<img width="654" alt="match_func_wv" src="https://github.com/user-attachments/assets/1f6255ad-46da-499b-a454-6716ba554708" />
+
+*  Exact match: the stored entries that match exactly with the query
+*  Threshold match: the stored entries whose distance is below specified thresholds.
+*  Best match: the stored entry that has the smallest distance.
 
 ## Reference
 
